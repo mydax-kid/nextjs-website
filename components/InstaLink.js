@@ -9,9 +9,9 @@ const InstaLink = () => {
       <p>@Captur</p>
       <div className= 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 p-4 lg:px-32 justify-items-center'>
         {
-          sliderData.map(each => {
+          sliderData.map((each, index) => {
             return(
-              <div className= 'relative w-full h-full'>
+              <div key= {index} className= 'relative w-full h-full'>
                   <Image 
                        src= {each.image} 
                        alt= ''                        
